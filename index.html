@@ -11,89 +11,192 @@
                href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
                rel="stylesheet"
           />
+          <link rel="stylesheet" href="pure.css" />
           <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="main.css" />
      </head>
      <body>
           <div class="mainwrapper">
-               <h2>
-                    <!-- Ramash Courier -->
-               </h2>
+               <div class="navbar shadow">
+                    <span class="navbtn shadow">
+                         ≡
+                    </span>
+                    <div class="navItems">
+                         <a class="shadow button" href="#aboutus">About Us</a
+                         ><a class="shadow button" href="#contact"
+                              >Contact Us</a
+                         >
+                    </div>
+               </div>
                <div class="image">
                     <img src="images/LOGOsssss.png" alt="" />
                </div>
-               <form action="">
-                    <h3>
-                         Make your Order Now
-                    </h3>
-                    <h5>Pick Up Info</h5>
-                    <input type="text" name="" id="" placeholder="Name" />
-                    <input type="email" name="" id="" placeholder="Email" />
-                    <input
-                         type="text"
-                         name=""
-                         id=""
-                         placeholder="Pick Up From"
-                    />
-                    <input
-                         type="text"
-                         name=""
-                         id=""
-                         placeholder="Pick Up Phone Number"
-                    />
-                    <input
-                         type="text"
-                         name=""
-                         id=""
-                         placeholder="Pick Up Address"
-                    />
-                    <h5>Delivery Info</h5>
-                    <input
-                         type="tel"
-                         name=""
-                         id=""
-                         placeholder="Delivery Phone Number"
-                    />
-                    <input
-                         type="text"
-                         name=""
-                         id=""
-                         placeholder="Delivery Address"
-                    />
-                    <label for="delivery date">
-                         Delivery Date:
+               <form
+                    class="gform card"
+                    method="POST"
+                    action="https://script.google.com/macros/s/AKfycbyh45Z8woUFbFz_2hxKMLhfbOWqhrvmwojurntS/exec"
+               >
+                    <div class="form-elements">
+                         <h3>
+                              Place your Order Now
+                         </h3>
+                         <h5>Pick Up Info</h5>
                          <input
-                              type="date"
-                              name=""
+                              type="text"
+                              name="name"
                               id=""
-                              placeholder="Delivery date"
+                              placeholder="Name"
+                              required
                          />
-                    </label>
-                    <label for="delivery time">
-                         Delivery Time:
                          <input
-                              type="time"
-                              name=""
+                              type="email"
+                              name="email"
                               id=""
-                              placeholder="Delivery Time"
+                              placeholder="Email"
+                              required
                          />
-                    </label>
-                    <h5>Order details</h5>
-                    <textarea
-                         name=""
-                         id=""
-                         cols="30"
-                         rows="10"
-                         placeholder="Write the Description for your order"
-                    ></textarea>
+                         <span class="email-invalid" style="display: none;">
+                              Must be a valid email address</span
+                         >
+                         <input
+                              type="text"
+                              name="pickUp From"
+                              id=""
+                              placeholder="Pick Up From"
+                              required
+                         />
+                         <input
+                              type="tel"
+                              name="PickUp PhoneNo"
+                              id=""
+                              placeholder="Pick Up Phone Number"
+                              required
+                         />
+                         <input
+                              type="text"
+                              name="PickUp Address"
+                              id=""
+                              placeholder="Pick Up Address"
+                              required
+                         />
+                         <h5>Delivery Info</h5>
+                         <input
+                              type="tel"
+                              name="Delivery PhoneNo"
+                              id=""
+                              placeholder="Delivery Phone Number"
+                              required
+                         />
+                         <input
+                              type="text"
+                              name="Delivery Address"
+                              id=""
+                              placeholder="Delivery Address"
+                              required
+                         />
+                         <label for="delivery date">
+                              Delivery Date:
+                              <input
+                                   type="date"
+                                   name="Delivery date"
+                                   id=""
+                                   placeholder="Delivery date"
+                              />
+                         </label>
+                         <label for="delivery time">
+                              Delivery Time:
+                              <input
+                                   type="time"
+                                   name="Delivery Time"
+                                   id=""
+                                   placeholder="Delivery Time"
+                              />
+                         </label>
+                         <h5>Order details</h5>
+                         <textarea
+                              name="Order Details"
+                              id=""
+                              cols="30"
+                              rows="10"
+                              placeholder="Write the Description for your order"
+                              required
+                         ></textarea>
 
-                    <input
-                         class="button"
-                         type="submit"
-                         name=""
-                         id=""
-                         value="Place Order"
-                    />
+                         <input
+                              class="button shadow"
+                              type="submit"
+                              name=""
+                              id=""
+                              value="Place Order"
+                         />
+                         <div class="submitted shadow">
+                              your order have been submitted. Pls stay on the
+                              page and do not resubmit
+                         </div>
+                    </div>
+                    <div class="thankyou_message" style="display: none;">
+                         <h2>
+                              <em>Thanks</em> for your patronage! Your package
+                              will be delivered to you soon!
+                         </h2>
+                         <div class="another button shadow">
+                              Another?
+                         </div>
+                    </div>
                </form>
+
+               <div id="aboutus" class="aboutus card">
+                    <div class="buttons">
+                         <h3 data-name="about" class="shadow button">
+                              About Us
+                         </h3>
+                         <h3 data-name="mission" class="shadow button">
+                              Our Mission
+                         </h3>
+                         <h3 data-name="vission" class="shadow button">
+                              Our Vission
+                         </h3>
+                    </div>
+
+                    <p class="about shadow">
+                         Ramash courier service is a delivery company that deals
+                         with pick up and delivery within geographical zones in
+                         the city.. we pick up at door step and deliver to door
+                         steps to save people the stress of getting a parcel
+                         delivered.. We offer the best services to our ability
+                    </p>
+                    <p class="mission shadow">
+                         To give both businessmen and consumers the best
+                         Delivery experience from door step to door step saving
+                         time, energy and resources
+                    </p>
+                    <p class="vission shadow">
+                         At Ramash Courier Services, we look forward to giving
+                         you the best delivery service at anytime and anywhere
+                    </p>
+               </div>
+
+               <div id="contact" class="contact card">
+                    <h3>Contact Us</h3>
+                    <b>Location:</b> No3 old chief palace, abattoir road Karu
+                    Abuja <b>Email:</b>
+                    <a href="mailto:Shamsideenumar0@gmail.com"
+                         >Shamsideenumar0@gmail.com</a
+                    >
+                    or
+                    <a href="mailto:Umarrrshamsiyyah@gmail.com"
+                         >Umarrrshamsiyyah@gmail.com</a
+                    >
+                    <b>Phone</b>
+                    <a href="tell:08163667369">08163667369</a> Or
+                    <a href="tel:08184275900">08184275900</a>
+               </div>
           </div>
+          <script
+               data-cfasync="false"
+               type="text/javascript"
+               src="form-submission-handler.js"
+          ></script>
+          <script src="script.js"></script>
      </body>
 </html>

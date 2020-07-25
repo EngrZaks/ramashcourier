@@ -1,92 +1,37 @@
-* {
-     box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-}
 body {
-     background: #ffffff;
-     font-family: "Roboto", sans-serif;
-     margin: auto;
-     font-size: 16px;
-     letter-spacing: 0.04em;
-     transition: all 0.3s;
+  margin: 2em;
 }
-:root {
-     --golden-color: #eb9f1c;
-     --dark-color: #201e1e;
-     --ash: #efeeee;
+aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
 }
-a {
-     text-decoration: none;
+textarea {
+  width: 100%;
 }
-.mainwrapper {
-     width: 97%;
-     display: flex;
-     flex-flow: column;
-     justify-content: center;
-     border-radius: 10px;
-     /* box-shadow: -6px -6px 5px 3px rgba(0, 0, 0, 0.5); */
-     background: var(--ash);
-     max-width: 600px;
-     margin: 20px auto;
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
 }
-h2,
-.image,
-form {
-     justify-content: center;
-     align-items: center;
-     align-content: center;
+.is-center {
+  text-align: center;
 }
-h2 {
-     text-align: center;
-     margin-bottom: 0;
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
 }
-h5 {
-     margin-bottom: 0;
+.button-xlarge {
+  font-size: 125%;
 }
-.mainwrapper .image {
-     background: var(--golden-color);
-     width: 30%;
-     padding: 10px;
-     margin: 0 auto;
-     border-radius: 6px;
-     box-shadow: 6px 6px 16px 3px #d1cdc7,
-          -6px -6px 16px 3px rgba(230, 142, 28, 0.5);
+button {
+  float: right;
 }
-.mainwrapper img {
-     width: 100%;
-}
-.mainwrapper form {
-     display: flex;
-     flex-flow: column nowrap;
-     padding: 10px;
-     background: #efeeee;
-     width: 85%;
-     margin: 20px auto;
-     margin-top: 50px;
-     box-shadow: 6px 6px 16px 3px #d1cdc7,
-          -6px -6px 16px 3px rgba(230, 142, 28, 0.5);
-     border-radius: 6px;
-}
-.mainwrapper form label {
-     justify-content: left;
-}
-.mainwrapper form input,
-.mainwrapper form label,
-.mainwrapper form textarea {
-     width: 100%;
-     margin: 8px;
-     padding: 8px;
-     border-radius: 5px 10px;
-     font-size: 1rem;
-     border: none;
-}
-.mainwrapper form input:last-of-type {
-     /* color: yellow; */
-}
-.button {
-     margin-top: 40px !important;
-     width: 40% !important;
-     box-shadow: 6px 6px 16px 3px #d1cdc7,
-          -6px -6px 16px 3px rgba(230, 142, 28, 0.5);
+#name, #email {
+  width: 50%;
 }
