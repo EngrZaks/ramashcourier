@@ -39,11 +39,11 @@ a {
      text-align: center;
      padding: 10px;
      margin-left: 30px;
-     width: 35px;
+     width: 55px;
      overflow: hidden;
 }
 .navtogg {
-     width: 350px;
+     width: 260px;
 }
 .navbar * {
      flex: 1 0 auto;
@@ -60,6 +60,7 @@ a {
 .navbtn {
      cursor: pointer;
      font-size: x-large;
+     width: 40px;
 }
 .navbtn:hover {
      transform: scale(1.1);
@@ -87,10 +88,7 @@ form .form-elements {
      align-items: center;
      align-content: center;
 }
-h2 {
-     text-align: center;
-     margin-bottom: 0;
-}
+
 h5 {
      margin-bottom: 0;
 }
@@ -116,7 +114,7 @@ h5 {
      margin-top: 50px;
      box-shadow: 6px 6px 16px 3px #d1cdc780,
           -6px -6px 16px 3px rgba(230, 142, 28, 0.336);
-     border-radius: 6px;
+     border-radius: 10px;
 }
 .mainwrapper form label {
      justify-content: left;
@@ -134,7 +132,7 @@ h5 {
 }
 .mainwrapper form input[type="date"],
 .mainwrapper form input[type="time"] {
-     margin: 0;
+     margin-left: -5px;
 }
 .mainwrapper form .button {
      margin-top: 40px;
@@ -177,5 +175,5 @@ h5 {
      text-align: center;
 }
 input:focus {
-     transform: scale(1.1);
+     transform: scale(1.05);
 }
