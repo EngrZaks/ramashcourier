@@ -7,8 +7,10 @@ var buttons = document.querySelectorAll(".buttons .button");
 var aboutP = document.querySelectorAll(".aboutus p");
 var navBtn = document.querySelector(".navbtn");
 var navBar = document.querySelector(".navbar");
-
-// console.log(buttons);
+var year = document.querySelector(".year");
+var date = new Date();
+var currentyear = date.getFullYear();
+year.innerHTML = currentyear;
 function clickMsg() {
      if (myform) {
           console.log("clicked successfully");
