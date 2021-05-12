@@ -186,3 +186,8 @@ input:focus {
      text-align-last: center;
      font-family: "Markazi Text", serif;
 }
+.copyright a {
+     font-weight: bolder;
+     text-decoration-style: wavy;
+
+}
